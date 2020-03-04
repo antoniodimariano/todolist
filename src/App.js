@@ -1,26 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    var hello = 'Hello World'
+    var mySelectStyle = {
+      border :'1px solid black',
+      display : 'inline-block',
+      padding:'5px'
+    };
+    return (
+      <div style = {mySelectStyle}/>
+     
+    )
+  }
+
+
 }
 
 export default App;
